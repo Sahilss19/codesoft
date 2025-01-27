@@ -1,4 +1,4 @@
-The "Task 1 Landing Page" project showcases different vehicles from PUBG/BGMI with dynamic content and animations. Users can select vehicles like UAZ, Lamborghini, and Buggy, and the page updates vehicle details (speed, range) and triggers a car animation. It consists of an HTML structure, CSS styling for layout and animations, and JavaScript to handle interactivity.
+The "Task 1 Landing Page" project showcases different vehicles from PUBG/BGMI with dynamic content and animations. Users can select vehicles like UAZ, Dacia, and Buggy, and the page updates vehicle details (speed, range) and triggers a car animation. It consists of an HTML structure, CSS styling for layout and animations, and JavaScript to handle interactivity.
 
 Key Features:
 
