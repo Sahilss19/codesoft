@@ -11,67 +11,75 @@ var model = document.getElementById("model");
 var mph = document.getElementById("mph");
 var speed = document.getElementById("speed");
 var range = document.getElementById("range");
-
+var info = document.querySelector('.info'); 
+function changeVehicleInfo(vehicle, bgImage, modelName, mphTime, vehicleSpeed, vehicleRange) {
+   
+    header.style.backgroundImage = bgImage;
+    
+    model.innerHTML = modelName;
+    mph.innerHTML = mphTime;
+    speed.innerHTML = vehicleSpeed;
+    range.innerHTML = vehicleRange;
+    
+    info.classList.add("fadeIn");
+    
+    setTimeout(() => {
+        info.classList.remove("fadeIn");
+    }, 1000);
+}
 
 uaz.onclick = function () {
-  header.style.backgroundImage =
-    "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-uaz.png)";
-  model.innerHTML = "UAZ";
-  mph.innerHTML = "3.2s";
-  speed.innerHTML = "120 mph";
-  range.innerHTML = "250 mi";
+    changeVehicleInfo(
+        "UAZ",
+        "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-uaz.png)",
+        "UAZ", "3.2s", "120 mph", "250 mi"
+    );
 };
 
 glider.onclick = function () {
-  header.style.backgroundImage =
-    "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-motorglider.png)";
-  model.innerHTML = "Glider";
-  mph.innerHTML = "4.5s";
-  speed.innerHTML = "120 mph";
-  range.innerHTML = "149 mi";
+    changeVehicleInfo(
+        "Glider",
+        "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-motorglider.png)",
+        "Glider", "4.5s", "120 mph", "149 mi"
+    );
 };
 
 buggy.onclick = function () {
-  header.style.backgroundImage =
-    "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-buggy.png)";
-  model.innerHTML = "Buggy";
-  mph.innerHTML = "5.0s";
-  speed.innerHTML = "100 mph";
-  range.innerHTML = "200 mi";
+    changeVehicleInfo(
+        "Buggy",
+        "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-buggy.png)",
+        "Buggy", "5.0s", "100 mph", "200 mi"
+    );
 };
 
 bike.onclick = function () {
-  header.style.backgroundImage =
-    "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-motorbike.png)";
-  model.innerHTML = "Bike";
-  mph.innerHTML = "1.8s";
-  speed.innerHTML = "180 mph";
-  range.innerHTML = "150 mi";
+    changeVehicleInfo(
+        "Bike",
+        "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-motorbike.png)",
+        "Bike", "1.8s", "180 mph", "150 mi"
+    );
 };
 
 brdm.onclick = function () {
-  header.style.backgroundImage =
-    "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-brdm.png)";
-  model.innerHTML = "Brdm";
-  mph.innerHTML = "8.2s";
-  speed.innerHTML = "63 mph";
-  range.innerHTML = "108 mi";
+    changeVehicleInfo(
+        "BRDM",
+        "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-brdm.png)",
+        "BRDM", "8.2s", "63 mph", "108 mi"
+    );
 };
 
 dacia.onclick = function () {
-    header.style.backgroundImage =
-      "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-dacia.png)";
-    model.innerHTML = "DACIA";
-    mph.innerHTML = "2.7s";
-    speed.innerHTML = "140 mph";
-    range.innerHTML = "250 mi";
-  };
+    changeVehicleInfo(
+        "DACIA",
+        "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-dacia.png)",
+        "DACIA", "2.7s", "140 mph", "250 mi"
+    );
+};
 
 ship.onclick = function () {
-  header.style.backgroundImage =
-    "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-air_boat.png)";
-  model.innerHTML = "Ship";
-  mph.innerHTML = "N/A";
-  speed.innerHTML = "40 mph";
-  range.innerHTML = "2000 mi";
+    changeVehicleInfo(
+        "Ship",
+        "url(https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-air_boat.png)",
+        "Ship", "N/A", "40 mph", "2000 mi"
+    );
 };
