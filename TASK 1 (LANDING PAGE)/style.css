@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #fff;
+    overflow-x: hidden;
+    background-color: #181717b7;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://wstatic-prod.pubg.com/web/live/static/game-info/vehicles/images/viewer/img-vehicles-dacia.png');
+    background-color: rgba(0, 0, 0, 0.7); 
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background-image 1s ease;
+    position: relative;
+}
+
+.car {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    transition: all 2s ease;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+.logo {
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+nav .btn {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav .btn:hover {
+    background-color: #ffcc00;
+    color: #000;
+    border-color: #ffcc00;
+}
+
+.info {
+    width: 100%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    z-index: 1000;
+    color: #fff;
+}
+
+.info div {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.info div h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+.info div p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.info .line {
+    flex: 1;
+    background: #ffcc00;
+    height: 3px;
+    margin: 0 20px;
+    border-radius: 2px;
+}
+
